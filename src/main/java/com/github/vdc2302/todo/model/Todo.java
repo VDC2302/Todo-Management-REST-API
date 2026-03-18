@@ -14,7 +14,7 @@ import lombok.AllArgsConstructor;
 public class Todo {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long Id;
+  private Long id;
 
   @NotBlank(message = "Title cannot be empty")
   @Column(nullable = false)
