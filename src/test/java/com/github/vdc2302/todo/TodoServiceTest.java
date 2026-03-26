@@ -47,9 +47,6 @@ public class TodoServiceTest {
     RuntimeException exception = assertThrows(RuntimeException.class, () -> {
       todoService.getTodoById(notFoundId);
     });
-
-    System.out.println(exception);
-
     verify(todoRepository).findById(notFoundId);
   }
 
